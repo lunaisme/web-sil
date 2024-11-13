@@ -15,19 +15,17 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans text-gray-900 antialiased">
-        <div class="bg-gray-50 text-black/50 dark:bg-black dark:text-white/50">
-        <img id="background" class="absolute -left-20 top-0 max-h-screen" src="https://laravel.com/assets/img/welcome/background.svg" />
-        <div class="relative min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0">
-            <div>
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-0 sm:pt-0 bg-no-repeat bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1495202337139-e865ed70fcd4?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"><div>
                 <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    <x-kemenkes-logo class="h-40 fill-current text-gray-500" />
                 </a>
             </div>
+            <h1 class="text-3xl font-bold">SISTEM INFORMASI LABORATORIUM</h1>
+            <h1 class="text-3xl font-bold">RSUD SENOPATI</h1>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+            <div class="w-full sm:max-w-md mt-4 px-6 py-4 overflow-hidden sm:rounded-lg">
                 {{ $slot }}
             </div>
-        </div>
         </div>
     </body>
 </html>
